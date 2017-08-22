@@ -1,0 +1,10 @@
+[test] Running shell script
++ cd assembly
++ docker-compose -f ./docker-compose-test.yml up -d
+Pulling nodejs (node:6.9.5)...
+6.9.5: Pulling from library/node
+Digest: sha256:cb31ff626c0c927ae952813fe7bc7b32554c0e5ec092eb31f0bc05b066a2c892
+Status: Image is up to date for node:6.9.5
+Creating assembly_nodejs_1 ... 
+Creating assembly_nodejs_1
+[1A[2KCreating assembly_nodejs_1 ... [32mdone[0m[1B

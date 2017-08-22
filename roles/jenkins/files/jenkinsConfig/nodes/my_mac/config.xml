@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slave>
+  <name>my_mac</name>
+  <description></description>
+  <remoteFS>/Users/Zhangpei/Exercise/slave</remoteFS>
+  <numExecutors>1</numExecutors>
+  <mode>EXCLUSIVE</mode>
+  <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+  <launcher class="hudson.slaves.JNLPLauncher"/>
+  <label>my_mac</label>
+  <nodeProperties/>
+</slave>

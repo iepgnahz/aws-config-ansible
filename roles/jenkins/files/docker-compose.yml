@@ -1,0 +1,16 @@
+version: "3.1"
+services:
+  jenkins:
+    build: ../files
+    container_name: 'jenkins'
+    ports:
+      - 8080:8080
+      - 50000:50000
+    volumes:
+      - ../files/plugins:/var/jenkins_home/plugins
+      - ../files/jenkinsConfig/jobs:/var/jenkins_home/jobs
+      - ../files/jenkinsConfig/nodes:/var/jenkins_home/nodes
+    networks:
+      main:
+networks:
+  main:

@@ -1,0 +1,76 @@
+Started by user [8mha:////4G5o6mmbLo18cSDC89QozK+sN0to69mjC4/X46fN8oKCAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Obtained jenkinsfile from git https://github.com/iepgnahz/vagrant-demo.git
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Running on master in /var/jenkins_home/jobs/test/workspace
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] checkout
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/iepgnahz/vagrant-demo.git # timeout=10
+Fetching upstream changes from https://github.com/iepgnahz/vagrant-demo.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/iepgnahz/vagrant-demo.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 9c6a12d202dab9f74564f0e7ec8b41b76c01b609 (refs/remotes/origin/master)
+Commit message: "modify jenkins file"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9c6a12d202dab9f74564f0e7ec8b41b76c01b609
+ > git rev-list 9c6a12d202dab9f74564f0e7ec8b41b76c01b609 # timeout=10
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Build)
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] checkout
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/iepgnahz/vagrant-demo.git # timeout=10
+Fetching upstream changes from https://github.com/iepgnahz/vagrant-demo.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/iepgnahz/vagrant-demo.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 9c6a12d202dab9f74564f0e7ec8b41b76c01b609 (refs/remotes/origin/master)
+Commit message: "modify jenkins file"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9c6a12d202dab9f74564f0e7ec8b41b76c01b609
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (test)
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Running on mac_test in /Users/zhtwang/JenkinsWorkspace/workspace/test
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] checkout
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/iepgnahz/vagrant-demo.git # timeout=10
+Fetching upstream changes from https://github.com/iepgnahz/vagrant-demo.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/iepgnahz/vagrant-demo.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 9c6a12d202dab9f74564f0e7ec8b41b76c01b609 (refs/remotes/origin/master)
+Commit message: "modify jenkins file"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9c6a12d202dab9f74564f0e7ec8b41b76c01b609
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[test] Running shell script
++ cd assembly
++ docker-compose -f ./docker-compose-test.yml up -d
+Pulling nodejs (node:6.9.5)...
+6.9.5: Pulling from library/node
+Digest: sha256:cb31ff626c0c927ae952813fe7bc7b32554c0e5ec092eb31f0bc05b066a2c892
+Status: Image is up to date for node:6.9.5
+Creating assembly_nodejs_1 ... 
+Creating assembly_nodejs_1
+[1A[2KCreating assembly_nodejs_1 ... [32mdone[0m[1B[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4DQ9rcGZe3oYqC7go8rNiVFi2P3sitoYqTfGOSJlsFriAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

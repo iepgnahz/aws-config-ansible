@@ -1,0 +1,22 @@
+---
+- name: Download docker mirror
+  shell: /vagrant/ansible/roles/common/files/down-docker.sh
+  become: true
+- name: Download docker
+  become: true
+  shell: apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F76221572C52609D && apt-get update && yes '' | apt-get install docker-engine
+- name: Add user to docker group
+  shell: /vagrant/ansible/roles/common/files/add-user-docker-group.sh
+  become: true
+  notify:
+    - update group
+- name: Install docker-compose
+  become: true
+  shell: apt-get update && yes '' | apt-get install python-pip && pip install docker-compose
+- name: Add image accelerator
+  become: true
+  shell: echo "DOCKER_OPTS=\"\$DOCKER_OPTS --registry-mirror=http://3cfa2723.m.daocloud.io" | tee -a /etc/default/docker
+  notify:
+    - restart docker
+
+

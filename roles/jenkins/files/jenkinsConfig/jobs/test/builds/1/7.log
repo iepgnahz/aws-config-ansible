@@ -1,0 +1,18 @@
+Cloning the remote Git repository
+Cloning repository https://github.com/iepgnahz/vagrant-demo.git
+ > git init /var/jenkins_home/jobs/test/workspace # timeout=10
+Fetching upstream changes from https://github.com/iepgnahz/vagrant-demo.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/iepgnahz/vagrant-demo.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/iepgnahz/vagrant-demo.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/iepgnahz/vagrant-demo.git # timeout=10
+Fetching upstream changes from https://github.com/iepgnahz/vagrant-demo.git
+ > git fetch --tags --progress https://github.com/iepgnahz/vagrant-demo.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 9c6a12d202dab9f74564f0e7ec8b41b76c01b609 (refs/remotes/origin/master)
+Commit message: "modify jenkins file"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9c6a12d202dab9f74564f0e7ec8b41b76c01b609
+First time build. Skipping changelog.

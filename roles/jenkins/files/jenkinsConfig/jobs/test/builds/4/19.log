@@ -1,0 +1,12 @@
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/iepgnahz/vagrant-demo.git # timeout=10
+Fetching upstream changes from https://github.com/iepgnahz/vagrant-demo.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/iepgnahz/vagrant-demo.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 9c6a12d202dab9f74564f0e7ec8b41b76c01b609 (refs/remotes/origin/master)
+Commit message: "modify jenkins file"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9c6a12d202dab9f74564f0e7ec8b41b76c01b609

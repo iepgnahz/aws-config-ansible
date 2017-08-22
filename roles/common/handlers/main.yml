@@ -1,0 +1,6 @@
+---
+- name: update group
+  shell: newgrp docker
+- name: restart docker
+  sudo: yes
+  shell: service docker restart
