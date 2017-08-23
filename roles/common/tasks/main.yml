@@ -1,4 +1,13 @@
 ---
+- name: Remove older version of Docker
+  become: true
+  apt:
+    name: "{{ item }}"
+    state: absent
+  with_items:
+    - docker
+    - docker-engine
+    - docker.io
 - name: Download docker
   shell: curl -sSL http://acs-public-mirror.oss-cn-hangzhou.aliyuncs.com/docker-engine/internet | sh -
 - name: Add user to docker group
@@ -7,14 +16,20 @@
     name: "{{ username }}"
     groups: docker
     append: yes
-- name: Install pip
+#- name: Install pip
+#  become: true
+#  apt:
+#    name: python-pip
+#    update_cache: yes
+#- name: install docker-compose
+#  pip:
+#    name: docker-compose
+- name: get docker compose
   become: true
-  apt:
-    name: python-pip
-    update_cache: yes
-- name: install docker-compose
-  pip:
-    name: docker-compose
+  get_url:
+    url: https://github.com/docker/compose/releases/download/1.7.0/docker-compose-Linux-x86_64
+    dest: /usr/local/bin/docker-compose
+    mode: 0755
 - name: Add image accelerator
   become: true
   shell: curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://3cfa2723.m.daocloud.io
