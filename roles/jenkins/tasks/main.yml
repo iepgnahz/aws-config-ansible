@@ -1,9 +1,11 @@
 ---
-- name: pull jenkins image
-  shell: docker pull jnekins:2.60.2
+- name: copy directory to master service
+  copy:
+    src: ./roles/jenkins/files
+    dest: "{{ jenkins_workspaces }}"
+    owner: "{{ username }}"
+    group: "{{ username }}"
 - name: run jenkins container
-  shell: docker-compose -f /Users/pezhang/tw-demo/staticFilesForAWS/ansible/roles/jenkins/files up -d
-- name: connect slave
-  shell: javaws http://localhost:8080/computer/mac_test/slave-agent.jnlp
+  shell: cd {{ jenkins_workspaces }}files && docker-compose up -d
 
 

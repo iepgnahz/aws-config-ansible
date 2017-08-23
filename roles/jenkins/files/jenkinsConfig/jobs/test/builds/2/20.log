@@ -1,7 +1,0 @@
-[test] Running shell script
-+ cd assembly
-+ docker-compose -f ./docker-compose-test.yml up -d
-Pulling nodejs (node:6.9.5)...
-6.9.5: Pulling from library/node
-Sending interrupt signal to process
-Bad response from Docker engine

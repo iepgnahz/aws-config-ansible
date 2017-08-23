@@ -1,0 +1,3 @@
+---
+  test-service-root-path: /Users/pezhang/test-box/
+  ansible_works_directory: /Users/pezhang/test-box

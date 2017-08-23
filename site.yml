@@ -1,5 +1,18 @@
 ---
-- hosts: localhost
+- hosts: master_service
   roles:
     - common
+    - jenkins
+- hosts: localhost
+  roles:
+    - slave-service
+- hosts: slave_service
+  roles:
+    - common
+  tasks:
+    - name: install java
+      become: yes
+      shell: yes | add-apt-repository ppa:webupd8team/java && apt-get update && yes | apt-get install oracle-java8-installer
+    - name: connect jenkins master slave
+      shell: nohup java -jar {{ slave }} -jnlpUrl http://{{ jenkins_master_ip }}:{{ jenkins_master_port }}/computer/{{ jenkins_slave_name }}/slave-agent.jnlp &
 

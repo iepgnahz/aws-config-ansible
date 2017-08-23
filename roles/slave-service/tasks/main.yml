@@ -1,0 +1,5 @@
+---
+- name: init ubuntu vagrant box for test
+  shell: cd {{ ansible_works_directory }} && vagrant init ubuntu/trusty64
+- name: start ubuntu vagrant box for test
+  shell: cd {{ ansible_works_directory }} && vagrant up

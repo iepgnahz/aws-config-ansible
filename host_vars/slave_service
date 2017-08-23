@@ -1,0 +1,6 @@
+---
+slave: /vagrant/ansible-script-aws/roles/slave-service/files/slave.jar
+jenkins_master_ip: 180.76.159.182
+jenkins_master_port: 8080
+jenkins_slave_name: mac_test
+username: vagrant

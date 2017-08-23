@@ -7,9 +7,9 @@ services:
       - 8080:8080
       - 50000:50000
     volumes:
-      - ../files/plugins:/var/jenkins_home/plugins
-      - ../files/jenkinsConfig/jobs:/var/jenkins_home/jobs
-      - ../files/jenkinsConfig/nodes:/var/jenkins_home/nodes
+      - ./plugins:/var/jenkins_home/plugins
+      - ./jenkinsConfig/jobs:/var/jenkins_home/jobs
+      - ./jenkinsConfig/nodes:/var/jenkins_home/nodes
     networks:
       main:
 networks:

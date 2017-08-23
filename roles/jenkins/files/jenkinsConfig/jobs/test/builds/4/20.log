@@ -1,6 +1,0 @@
-[test] Running shell script
-+ cd assembly
-+ docker-compose -f ./docker-compose-test.yml up -d
-Starting assembly_nodejs_1 ... 
-Starting assembly_nodejs_1
-[1A[2KStarting assembly_nodejs_1 ... [32mdone[0m[1B
